@@ -14,7 +14,7 @@
 # limitations under the License.
 #
 
-DEVICE_PATH := device/xiaomi/agate
+DEVICE_PATH := device/xiaomi/chopin
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
