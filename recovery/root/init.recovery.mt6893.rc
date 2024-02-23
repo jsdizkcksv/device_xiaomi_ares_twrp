@@ -6,7 +6,7 @@ import /miteelog.rc
 import /tee-supplicant.rc
 
 on init
-    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw
+    export LD_LIBRARY_PATH /system/lib64:/vendor/lib64:/vendor/lib64/hw:/system/lib64/hw
 
 on fs
     install_keyring
@@ -60,7 +60,11 @@ service keystore /system/bin/keystore /tmp/misc/keystore
     group root drmrpc readproc log
     disabled
     seclabel u:r:recovery:s0
-
+    
+service vibratorfeature-hal-service /system/bin/vendor.xiaomi.hardware.vibratorfeature.service
+     class hal 
+     user system 
+     group system input 
 service keymaster-4-0-beanpod /system/bin/android.hardware.keymaster@4.0-service.beanpod
     user root
     group root drmrpc
@@ -109,6 +113,10 @@ on property:twrp.decrypt.done=true
     stop keymaster-4-0-beanpod
     stop keymaster-4-0-mitee
     stop gatekeeper-1-0   
+
+# Haptic feedback 
+on property:twrp.modules.loaded=true 
+    start vibratorfeature-hal-service
 
 on boot
     start boot-hal-1-2
