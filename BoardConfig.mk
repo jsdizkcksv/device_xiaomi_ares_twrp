@@ -164,6 +164,7 @@ TW_NO_HAPTICS := true
 TW_SCREEN_BLANK_ON_BOOT:= true
 TW_THEME := portrait_hdpi
 TWRP_INCLUDE_LOGCAT := true
+TW_OF_MAINTAINER="Mihan3000"
 
 # StatusBar
 TW_STATUS_ICONS_ALIGN := center
