@@ -25,11 +25,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/gsi_keys.mk)
 $(call inherit-product, vendor/twrp/config/common.mk)
 
 # Device specific configs
-$(call inherit-product, device/xiaomi/chopin/device.mk)
+$(call inherit-product, device/xiaomi/ares/device.mk)
 
 ## Device identifier. This must come after all inclusions
-PRODUCT_DEVICE := chopin
-PRODUCT_NAME := twrp_chopin
+PRODUCT_DEVICE := ares
+PRODUCT_NAME := twrp_ares
 PRODUCT_BRAND := Xiaomi	
-PRODUCT_MODEL := Redmi Note 10 Pro
+PRODUCT_MODEL := Redmi K40 Gaming
 PRODUCT_MANUFACTURER := Xiaomi 
