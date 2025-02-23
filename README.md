@@ -1,5 +1,5 @@
-# TWRP Tree for Redmi Note 10 Pro 5 G
+# TWRP Tree for Redmi K40 Gaming
 * Brand : Xiaomi
 * SoC Vendor : Mediatek
-* Chipset : Dimensity 1100
+* Chipset : Dimensity 1200
 * Implementation : Virtual AB
