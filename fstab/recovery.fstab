@@ -10,6 +10,7 @@ system                           /system               ext4     ro              
 system_ext                       /system_ext           ext4     ro                                                              wait,logical,slotselect
 product                           /product              ext4     ro                                                              wait,logical,slotselect
 vendor                            /vendor               ext4     ro                                                              wait,logical,slotselect
+mi_ext                            /mi_ext               ext4     ro                                                              wait,logical,slotselect
 
 # Metadata
 /dev/block/by-name/metadata                      /metadata             ext4     noatime,nosuid,nodev,discard                                    wait,check,formattable
