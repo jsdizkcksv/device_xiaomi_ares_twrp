@@ -123,6 +123,9 @@ TARGET_COPY_OUT_ODM := odm
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
+#vibratorfeature
+TW_SUPPORT_INPUT_AIDL_HAPTICS=true
+
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
