@@ -123,8 +123,11 @@ TARGET_COPY_OUT_ODM := odm
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-#vibratorfeature
-TW_SUPPORT_INPUT_AIDL_HAPTICS=true
+# vibrator
+TW_SUPPORT_INPUT_AIDL_HAPTICS := true
+
+# MTK download mode
+TW_HAS_BROM_MODE := true
 
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
@@ -149,7 +152,7 @@ TARGET_USE_CUSTOM_LUN_FILE_PATH := /config/usb_gadget/g1/functions/mass_storage.
 TW_NO_FASTBOOT_BOOT := true
 
 # TWRP
-TW_FRAMERATE=120
+TW_FRAMERATE := 120
 
 # Debug
 TWRP_INCLUDE_LOGCAT := true
