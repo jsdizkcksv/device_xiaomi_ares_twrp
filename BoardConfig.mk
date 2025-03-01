@@ -123,12 +123,6 @@ TARGET_COPY_OUT_ODM := odm
 # Properties
 TARGET_SYSTEM_PROP += $(DEVICE_PATH)/system.prop
 
-# vibrator
-TW_SUPPORT_INPUT_AIDL_HAPTICS := true
-
-# MTK download mode
-TW_HAS_BROM_MODE := true
-
 # Recovery
 BOARD_HAS_LARGE_FILESYSTEM := true
 BOARD_HAS_NO_SELECT_BUTTON := true
@@ -169,9 +163,9 @@ TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_INCLUDE_NTFS_3G := true
 TW_LOAD_VENDOR_MODULES := "fts_touch_spi.ko xiaomi_touch.ko"
 TW_MAX_BRIGHTNESS := 2047
-TW_NO_HAPTICS := true
 TW_SCREEN_BLANK_ON_BOOT:= true
 TW_THEME := portrait_hdpi
+TW_NO_HAPTICS := true
 TWRP_INCLUDE_LOGCAT := true
 TW_OF_MAINTAINER="Mihan3000"
 
